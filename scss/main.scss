@@ -1,28 +1,48 @@
+// *** color ***
 $text-color: #222;
+$theme-color: #170a48;
+$secondary-color: #f2277731;
+$ternary-color: #ccf962;
+$link-color: $secondary-color;
+$menu-color: white;
+
+// *** fonts ***
+$text-font: verdana, Arial, sans-serif;
+$headline-font: 'Palatino Linotype', 
+Georgia, serif;
+
+// *** sizes ***
+$content-width: 960px;
+$footer-height: 90px;
 $header-height: 60px;
 
 body {
-  font-family: sans-serif;
+  font-family: $text-font;
   color: $text-color;
 }
 
 h1, h2, h3, h4 {
-  
+  font-family: $header-height;
 }
 
 p {
-  
+  font-family: $text-color;
 }
 
 a {
-
+  color: $link-color;
 }
 
 #header {
   height: $header-height;
-
+  background-color: $theme-color;
   #main-menu {
-
+    li {
+      display: inline;
+    }
+    a {
+      color: $menu-color;
+    }
   }
   
   #logo {
@@ -31,6 +51,9 @@ a {
 }
 
 #main {
+  width: $content-width;
+  margin-left: auto;
+  margin-right: auto;
 
   #content {
   }
@@ -40,5 +63,6 @@ a {
 }
 
 #footer {
-
+  height: $footer-height;
+  background-color: $ternary-color;
 }

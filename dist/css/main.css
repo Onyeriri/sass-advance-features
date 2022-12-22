@@ -1,8 +1,36 @@
 body {
-  font-family: sans-serif;
+  font-family: verdana, Arial, sans-serif;
   color: #222;
+}
+
+h1, h2, h3, h4 {
+  font-family: 60px;
+}
+
+p {
+  font-family: #222;
+}
+
+a {
+  color: rgba(242, 39, 119, 0.1921568627);
 }
 
 #header {
   height: 60px;
+  background-color: #170a48;
+}
+#header #main-menu li {
+  display: inline;
+}
+#header #main-menu a {
+  color: white;
+}
+#main {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#footer {
+  height: 90px;
+  background-color: #ccf962;
 }
