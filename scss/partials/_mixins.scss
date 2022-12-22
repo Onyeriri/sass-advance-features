@@ -1,0 +1,35 @@
+@mixin fancy-links {
+  a {
+    font-style: italic;
+    text-decoration: none;
+  }
+}
+
+@mixin box-shadow($shadow...) {
+  box-shadow: $shadow;
+  -moz-box-shadow: $shadow;
+  -webkit-box-shadow: $shadow;
+}
+
+@mixin rounded($size: 7px) {
+  border-radius: $size;
+}
+
+@mixin box {
+  @include rounded(10px);
+  border: 1px solid #333;
+}
+
+@mixin large-text($size, $weight, $color) {
+  font: {
+    size: $size;
+    font-weight: $weight;
+  }
+
+  color: $color;
+}
+
+@mixin warning {
+  background-color: orange;
+  color: #fff;
+}

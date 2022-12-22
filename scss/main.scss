@@ -1,10 +1,6 @@
-// ***variables***
-@import 'varibles';
-@import 'warning';
-@import 'large-text';
-@import 'box';
-@import 'rounded';
-@import 'fancy-links';
+// ***@import declarations***
+@import './partials/varibles';
+@import './partials/mixins';
 
 @include fancy-links;
 
@@ -19,7 +15,7 @@ h1, h2, h3, h4 {
 }
 
 h2 {
-  @include large-text;
+  @include large-text(100px, bold, red);
 }
 
 p {
@@ -37,6 +33,7 @@ a {
 
 #header {
   @include box;
+  @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
   height: $header-height;
   background-color: $theme-color;
   #main-menu {
