@@ -2,6 +2,9 @@
 @import './partials/varibles';
 @import './partials/mixins';
 
+@include google-font('Alegreya+Sans');
+@include google-font('Rubik+Gemstones');
+
 @include fancy-links;
 
 // ***elements definition***
@@ -17,7 +20,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: $header-height;
+  font-family: $headline-font;
 }
 
 h2 {
@@ -25,7 +28,7 @@ h2 {
 }
 
 p {
-  font-family: $text-color;
+  font-family: $text-font;
 }
 
 a {
