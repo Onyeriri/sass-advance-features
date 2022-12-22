@@ -8,6 +8,10 @@ body {
   color: #222;
 }
 
+* html body {
+  font-size: 125%;
+}
+
 h1, h2, h3, h4 {
   font-family: 60px;
 }
