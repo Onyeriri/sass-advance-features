@@ -1,0 +1,4 @@
+@mixin box {
+  @include rounded;
+  border: 1px solid #333;
+}
