@@ -1,3 +1,8 @@
+a {
+  font-style: italic;
+  text-decoration: none;
+}
+
 body {
   font-family: verdana, Arial, sans-serif;
   color: #222;
@@ -5,6 +10,11 @@ body {
 
 h1, h2, h3, h4 {
   font-family: 60px;
+}
+
+h2 {
+  font-size: 22px;
+  font-font-weight: bold;
 }
 
 p {
@@ -15,7 +25,15 @@ a {
   color: rgba(242, 39, 119, 0.1921568627);
 }
 
+.warning-button {
+  background-color: orange;
+  color: #fff;
+  padding: 8px 12px;
+}
+
 #header {
+  border-radius: 6px;
+  border: 1px solid #333;
   height: 60px;
   background-color: #170a48;
 }
