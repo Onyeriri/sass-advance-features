@@ -10,6 +10,12 @@ body {
   color: $text-color;
 }
 
+@include apply-to-ie-6 {
+  body {
+    font-size: 125%;
+  }
+}
+
 h1, h2, h3, h4 {
   font-family: $header-height;
 }
