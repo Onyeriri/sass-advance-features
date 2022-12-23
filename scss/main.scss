@@ -12,9 +12,9 @@ body {
   font-family: $text-font;
   color: $text-color;
 
-  @media only screen and (max-width: 960px) {
-    font-size: 50rem;
-    background-color: red!important;
+  @include small-screens {
+    color: aqua;
+    font-size: 100em;
   }
 }
 
@@ -85,4 +85,8 @@ a {
 #footer {
   height: $footer-height;
   background-color: $ternary-color;
+
+  @include small-screens {
+    background-color: red;
+  }
 }

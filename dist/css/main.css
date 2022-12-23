@@ -9,10 +9,10 @@ body {
   font-family: "Dancing Script", verdana, Arial, sans-serif;
   color: #222;
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 360px) {
   body {
-    font-size: 50rem;
-    background-color: red !important;
+    color: aqua;
+    font-size: 100em;
   }
 }
 
@@ -75,4 +75,9 @@ a {
 #footer {
   height: 90px;
   background-color: #ccf962;
+}
+@media only screen and (max-width: 360px) {
+  #footer {
+    background-color: red;
+  }
 }
