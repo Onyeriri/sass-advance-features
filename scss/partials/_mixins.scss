@@ -23,7 +23,7 @@
 @mixin large-text($size, $weight, $color) {
   font: {
     size: $size;
-    font-weight: $weight;
+    weight: $weight;
   }
 
   color: $color;

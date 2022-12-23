@@ -2,8 +2,8 @@
 @import './partials/varibles';
 @import './partials/mixins';
 
-@include google-font('Alegreya+Sans');
-@include google-font('Rubik+Gemstones');
+@include google-font('Dancing+Script');
+@include google-font('Rubik+Storm');
 
 @include fancy-links;
 
@@ -11,6 +11,11 @@
 body {
   font-family: $text-font;
   color: $text-color;
+
+  @media only screen and (max-width: 960px) {
+    font-size: 50rem;
+    background-color: red!important;
+  }
 }
 
 @include apply-to-ie-6 {
@@ -29,6 +34,7 @@ h2 {
 
 p {
   font-family: $text-font;
+  font-size: $text-size;
 }
 
 a {
@@ -61,6 +67,11 @@ a {
 
 #main {
   width: $content-width;
+  @media only screen and (max-width: 960px) {
+    width: auto;
+    max-width: $content-width;
+    background-color: #e2cce2;
+  }
   margin-left: auto;
   margin-right: auto;
 
