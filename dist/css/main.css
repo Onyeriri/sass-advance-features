@@ -1,13 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans);
-@import url(https://fonts.googleapis.com/css?family=Rubik+Gemstones);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script);
+@import url(https://fonts.googleapis.com/css?family=Rubik+Storm);
 a {
   font-style: italic;
   text-decoration: none;
 }
 
 body {
-  font-family: "Alegreya Sans", verdana, Arial, sans-serif;
+  font-family: "Dancing Script", verdana, Arial, sans-serif;
   color: #222;
+}
+@media only screen and (max-width: 960px) {
+  body {
+    font-size: 50rem;
+    background-color: red !important;
+  }
 }
 
 * html body {
@@ -15,17 +21,18 @@ body {
 }
 
 h1, h2, h3, h4 {
-  font-family: "Rubik Gemstones", "Palatino Linotype", Georgia, serif;
+  font-family: "Rubik Storm", "Palatino Linotype", Georgia, serif;
 }
 
 h2 {
   font-size: 100px;
-  font-font-weight: bold;
+  font-weight: bold;
   color: red;
 }
 
 p {
-  font-family: "Alegreya Sans", verdana, Arial, sans-serif;
+  font-family: "Dancing Script", verdana, Arial, sans-serif;
+  font-size: 1.5rem;
 }
 
 a {
@@ -57,6 +64,13 @@ a {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
+}
+@media only screen and (max-width: 960px) {
+  #main {
+    width: auto;
+    max-width: 960px;
+    background-color: #e2cce2;
+  }
 }
 #footer {
   height: 90px;
