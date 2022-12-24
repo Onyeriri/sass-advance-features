@@ -9,12 +9,6 @@ body {
   font-family: "Dancing Script", verdana, Arial, sans-serif;
   color: #222;
 }
-@media only screen and (max-width: 360px) {
-  body {
-    color: aqua;
-    font-size: 100em;
-  }
-}
 
 * html body {
   font-size: 125%;
@@ -38,11 +32,17 @@ p {
 a {
   color: rgba(242, 39, 119, 0.1921568627);
 }
+a:hover {
+  color: rgba(25, 1, 11, 0.1921568627);
+}
 
 .warning-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px;
+}
+.warning-button:hover {
+  background-color: #ff6666;
 }
 
 #header {
@@ -59,25 +59,20 @@ a {
 }
 #header #main-menu a {
   color: white;
+  padding: 6px 8px;
+  border-bottom: 1px solid rgba(254, 254, 254, 0);
+  transition: border-bottom 0.5s;
+  transition-timing-function: ease-in-out;
+}
+#header #main-menu a:hover {
+  border-bottom: 1px solid #fefefe;
 }
 #main {
   width: 960px;
   margin-left: auto;
   margin-right: auto;
 }
-@media only screen and (max-width: 960px) {
-  #main {
-    width: auto;
-    max-width: 960px;
-    background-color: #e2cce2;
-  }
-}
 #footer {
   height: 90px;
   background-color: #ccf962;
-}
-@media only screen and (max-width: 360px) {
-  #footer {
-    background-color: red;
-  }
 }
