@@ -37,13 +37,22 @@ a:hover {
   color: rgba(25, 1, 11, 0.1921568627);
 }
 
-.warning-button {
+.warning-button, .cta-button, .suoer-cta-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px;
 }
-.warning-button:hover {
+.warning-button:hover, .cta-button:hover, .suoer-cta-button:hover {
   background-color: #ff6666;
+}
+
+.cta-button, .suoer-cta-button {
+  border-radius: 7px;
+  font-weight: bold;
+}
+
+.suoer-cta-button {
+  font-size: 1.25em;
 }
 
 #header {
@@ -80,7 +89,15 @@ a:hover {
 #main #sidebar {
   float: right;
   width: 23.25%;
-  font-weight: 11.625%;
+}
+
+.error, .critical-error, .cta-button, .suoer-cta-button {
+  color: red;
+}
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold;
 }
 
 #footer {
