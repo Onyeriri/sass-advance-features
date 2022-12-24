@@ -8,6 +8,7 @@ a {
 body {
   font-family: "Dancing Script", verdana, Arial, sans-serif;
   color: #222;
+  font-size: 1.125em;
 }
 
 * html body {
@@ -72,7 +73,19 @@ a:hover {
   margin-left: auto;
   margin-right: auto;
 }
+#main #content {
+  float: left;
+  width: 69.75%;
+}
+#main #sidebar {
+  float: right;
+  width: 23.25%;
+  font-weight: 11.625%;
+}
+
 #footer {
   height: 90px;
   background-color: #ccf962;
+  clear: both;
+  content: "";
 }
