@@ -51,6 +51,18 @@ a {
   }
 }
 
+.cta-button {
+  @extend .warning-button;
+  @extend .error;
+  @include rounded;
+  font-weight: bold;
+}
+
+.suoer-cta-button {
+  @extend .cta-button;
+  font-size: em(20px);
+}
+
 #header {
   @include box;
   @include box-shadow(2px 0px 4px #999, 1px 1px 6px $secondary-color);
@@ -96,8 +108,16 @@ a {
     width: 2*$col;
     // font-weight: $col;
   }
+}
 
-  
+.error {
+  color: red;
+}
+
+.critical-error {
+  @extend .error;
+  bottom: 1px solid red;
+  font-weight: bold;
 }
 
 #footer {
