@@ -68,3 +68,8 @@
   $font: unquote($font);
   @import url(https://fonts.googleapis.com/css?family=#{$font});
 }
+
+@mixin clear {
+  clear: both;
+  content: '';
+}
